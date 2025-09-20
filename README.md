@@ -53,7 +53,7 @@ shanture_sales_analytics/
 
 ### 1️⃣ Clone the repo
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/sairamdasari7/Shanture-Sales-Dashboard.git
 cd shanture_sales_analytics
 ```
 
