@@ -4,7 +4,7 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const salesRoutes = require('./routes/sales');
 
-// Load .env only in development
+
 if (process.env.NODE_ENV !== 'production') {
   dotenv.config();
 }
@@ -21,7 +21,7 @@ const MONGO_URI = process.env.MONGO_URI;
 
 if (!MONGO_URI) {
   console.error("ERROR: MONGO_URI is not defined. Set it in .env (local) or Render secrets (production).");
-  process.exit(1); // stop the server if MONGO_URI is missing
+  process.exit(1); 
 }
 
 mongoose.connect(MONGO_URI, {
